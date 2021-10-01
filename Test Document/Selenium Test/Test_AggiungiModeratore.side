@@ -1,0 +1,1134 @@
+{
+  "id": "3915d24b-6202-48a9-8095-33f4429e9b50",
+  "version": "2.0",
+  "name": "Test_AggiungiModeratore",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "9ef0ce90-5652-4385-aa1c-b36f03fc6fd9",
+    "name": "Test_AggiungiModeratore 6.1.1 (Formato nome errato)",
+    "commands": [{
+      "id": "54947ff9-e505-48e8-ab1e-43f8d2eddd43",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd5bbae5-2360-45c2-af34-145dae9cec56",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6419204-e26b-4c2f-bcad-a89b080ec71c",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine892"
+    }, {
+      "id": "91a92c7a-ddc1-46b8-92d5-13c299957818",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b9d48b-1f6f-4838-998e-1d0f05eda3a6",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "16e600f4-09c6-461e-a3e0-eaee3792c32d",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b42cbfb2-ed48-44e5-8b2a-0057f0d681d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34b53ce2-7b50-42c9-a173-07596495499b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nomeModeratoreAlert",
+      "targets": [
+        ["id=nomeModeratoreAlert", "id"],
+        ["css=#nomeModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='nomeModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8015f1da-b2a4-4db0-8d4d-9e4f6acf19ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#nomeModeratoreAlert strong",
+      "targets": [
+        ["css=#nomeModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='nomeModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "ea304e78-a5b2-4700-903a-1f76907bde8c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=cognomeModeratoreAlert",
+      "targets": [
+        ["id=cognomeModeratoreAlert", "id"],
+        ["css=#cognomeModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='cognomeModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ed5774-3f31-4cee-a49b-fd343ca4a75a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#cognomeModeratoreAlert strong",
+      "targets": [
+        ["css=#cognomeModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='cognomeModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "36e0cba2-07a5-4fab-9219-bbd4436bbdc7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailModeratoreAlert",
+      "targets": [
+        ["id=emailModeratoreAlert", "id"],
+        ["css=#emailModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68f979b6-6ef8-4589-ab70-82e9beadd037",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#emailModeratoreAlert strong",
+      "targets": [
+        ["css=#emailModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "1b9a3be1-091e-41db-9991-e84e5f425e29",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7161b1d7-e60e-4310-aaac-8cc127475faf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "3e8ede02-af2c-4b69-b7f7-7efcde0d1e37",
+    "name": "Test_AggiungiModeratore 6.1.2 (Formato cognome errato) ",
+    "commands": [{
+      "id": "17597578-a158-4e9b-9116-ebfa2a059846",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd5f267d-0d9b-4d05-ae9a-e30ffab392e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ad53db3-df88-48cf-a569-0f2f26f37345",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "a98723df-6415-480e-9b56-40d9e3cc00ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.row:nth-child(2) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6225f75e-a3d7-4129-848b-100b2c075c20",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Amendola892"
+    }, {
+      "id": "0f6d743b-de8d-464d-99d6-272ffcd6152e",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9870f623-2be9-4dc9-b4c8-83721e205b13",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "a599e05e-75df-4432-ad92-81f639e8f022",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38669ca5-b919-4f8b-89ef-86f008265dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c34c0191-3ed7-4ff1-afd7-ae86bbf31152",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "3c489811-5778-418a-8359-f06743c21562",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=cognomeModeratoreAlert",
+      "targets": [
+        ["id=cognomeModeratoreAlert", "id"],
+        ["css=#cognomeModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='cognomeModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfbd61f-b766-46b2-be84-c403a4bfa8c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#cognomeModeratoreAlert strong",
+      "targets": [
+        ["css=#cognomeModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='cognomeModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "48f8adf8-de75-4300-a659-6da1300f3d8d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailModeratoreAlert",
+      "targets": [
+        ["id=emailModeratoreAlert", "id"],
+        ["css=#emailModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a045923c-1c79-4a72-aadc-a2e09658907a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#emailModeratoreAlert strong",
+      "targets": [
+        ["css=#emailModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "6fa8a814-2105-46b1-b68e-a88b6fe43fac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f77e46cb-c1dc-46b5-a339-9018cc18cf6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "4efcb912-bd22-41ac-8628-23fca6bedb22",
+    "name": "Test_AggiungiModeratore 6.1.3 (Formato e-mail errato)  ",
+    "commands": [{
+      "id": "fa022ede-f82c-43c1-b43b-af13e96a5f0f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6c1b565-07d5-403e-b4de-c8566449245e",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "968afd52-b95b-4d8d-a568-112c6fbdbd3f",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "8020be88-afaa-4e9a-b177-1a1d4ed4ba49",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.row:nth-child(2) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b87e9e1-6883-4024-acaf-c2b9c6917c71",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Amendola"
+    }, {
+      "id": "ce410155-6b3e-4f36-8895-6b750e6fac58",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(3) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f4a329-1652-42c9-aeb6-ff8e079d8ff0",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "email@a"
+    }, {
+      "id": "6d49e9fb-fcb0-45ed-b811-03f805f8bf5f",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4adadeca-22d8-4607-9166-9a3a763838ce",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "159aeb07-b375-4fc0-9785-b6ec3d80be53",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad2db4e1-2580-4176-a709-ee97d85d6e32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf1aa714-410c-4857-9acb-725304c4d751",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "bfc1b972-5c5a-46ce-a31f-22a1b8df5f39",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=cognomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "484efd2e-1f83-442d-bc1a-8e0a4b8912c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailModeratoreAlert",
+      "targets": [
+        ["id=emailModeratoreAlert", "id"],
+        ["css=#emailModeratoreAlert", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e756a290-f50b-41a6-a1e0-4ab2a8bd8434",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#emailModeratoreAlert strong",
+      "targets": [
+        ["css=#emailModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='emailModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "fbf01803-ca6b-4d9e-be36-c24c443eabce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f2b9316-a643-44d3-a120-7097857a5ef6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "026c34e4-722b-4e39-8b09-41443fb2ce68",
+    "name": "Test_AggiungiModeratore 6.1.5 (E-mail già in uso)  ",
+    "commands": [{
+      "id": "f53c4a33-cdb9-4a70-8df0-aed9aa024b08",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f70991fd-d95a-4322-9e0c-c361537a12d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f17b667-bc3a-49ec-a39a-ee1826334d3e",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "f33852e4-cadf-4df3-a91e-1c367cc09c32",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.row:nth-child(2) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08652a10-5777-4d0f-a819-82d7d75357fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Amendola"
+    }, {
+      "id": "15098903-1e5c-426e-b55a-9e2def08d69e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(3) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9f6ba8-0369-4d5a-8706-7c8dbc30c603",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "moderatorecatalogo@email.it"
+    }, {
+      "id": "8d046008-4248-4950-8f62-d0396e6b00bf",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb3cb256-f3ac-4f29-823e-01c27a42be0d",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "70bb7e2e-811a-48c7-8e76-8abff475b9f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(4) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "869f7693-195f-4d4f-8c1b-e300384d10d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "Account01"
+    }, {
+      "id": "9775af35-2c65-4b4d-b8c1-fb15295c69d9",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a8d33ce-cea9-4f6c-aaac-43da244a96d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e98efddf-7d7d-44db-937f-486319efcdba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailAlreadyExists",
+      "targets": [
+        ["id=emailAlreadyExists", "id"],
+        ["css=#emailAlreadyExists", "css:finder"],
+        ["xpath=//div[@id='emailAlreadyExists']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66be3c15-e252-485e-9561-294e77793f5d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='emailAlreadyExists']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Email già associata ad un account')]", "xpath:innerText"]
+      ],
+      "value": "Email già associata ad un account"
+    }, {
+      "id": "57f6dc04-1810-40b2-899b-9f59477d2e85",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c3fcee57-dba8-4c87-a3be-455e60cd2765",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=emailAlreadyExists"
+    }]
+  }, {
+    "id": "c6d98988-795b-4170-a569-d588981db958",
+    "name": "Test_AggiungiModeratore 6.1.4 (Formato password errato, form completo) ",
+    "commands": [{
+      "id": "29607945-4725-4aba-8bbc-e3aeb9e58856",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cecdc419-ac42-407b-b6e6-a5bc3a509a50",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f575a40d-b105-4f5e-a275-3b2c33c0c1bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "c5a72554-ae5f-4696-80d1-1217806d513c",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.row:nth-child(2) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad20ec6e-1f28-4ebb-9b76-ac2616f51684",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Amendola"
+    }, {
+      "id": "33aef821-161e-4abf-bd29-956c32d35ae0",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(3) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cfe839b-d786-46d0-b73c-c1f4ca169f91",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "moderatorecatalogo4@email.it"
+    }, {
+      "id": "0dca915a-7579-4278-83eb-db2c6f03a04b",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(4) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aefb6b8-51bd-4bcd-bb2a-7c8626cb122e",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "account0"
+    }, {
+      "id": "5eb0f746-2d50-4549-9ae8-c0eedd43e389",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4259ba5-08f5-476d-9482-ac9eb729202b",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "08e5e99e-a7e3-423f-8d0d-ff0418385a28",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a37dd6eb-4bc6-4976-9c6a-415f880ecda5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d81c956-e24d-46ad-8f3c-e86771038a45",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "5f0dcf5f-baae-4c96-8ee3-7e66b2edbdc5",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=cognomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "d4bbc556-aeb7-4da1-bb14-4d4ee5d6dbf1",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "cbe4c312-9491-4ec6-9797-903fc744be84",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f7911cc-95ad-424a-a43f-573d3442b3bc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [
+        ["css=#passwordModeratoreAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordModeratoreAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "3f956b1e-06d0-49ec-ac03-5ee1fdc87bb5",
+    "name": "Test_AggiungiModeratore 6.1.6 (Successful)",
+    "commands": [{
+      "id": "f35372a8-1797-4197-9215-2b23958baf66",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd9ed5b1-03f2-476d-b814-03a0213bb1c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4160d427-05d5-41e2-8421-f7e8627fa089",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "baa49a9e-94d0-417f-85c1-265d0b0d9168",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.row:nth-child(2) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ddee09-7a21-4039-bebe-95a0cb403a5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Amendola"
+    }, {
+      "id": "55dd1022-e1bf-4ea5-961d-8d7a68a122fd",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.row:nth-child(3) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a373c283-8bde-4cb4-8dad-3e050a503d4c",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "moderatorecatalogo4@email.it"
+    }, {
+      "id": "3bef144d-141b-4607-9a91-6fc6dc952d38",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(4) > .align-items-lg-center > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2850cac7-d883-4994-97a2-9b59bae70a92",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "Account01"
+    }, {
+      "id": "daffbaa6-9c15-4d41-9197-050c31551be4",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b810c510-6c25-4f19-a8d0-e9cc29879604",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipologia",
+      "targets": [],
+      "value": "label=Moderatore Catalogo"
+    }, {
+      "id": "ea2c3a49-4812-4c53-b967-7cd2a91ca43e",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipologia",
+      "targets": [
+        ["name=tipologia", "name"],
+        ["css=.row:nth-child(5) select", "css:finder"],
+        ["xpath=//select[@name='tipologia']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[5]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "296d0ce0-7bce-4877-a19a-041a40396135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(6) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiModeratoreForm']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97e528bc-a176-41c3-81db-52ba5ce5bfe5",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "1827fceb-b0d9-4352-b5bf-2ed99cb843d7",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=cognomeModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "35da4c58-18fa-4036-b479-3776d7165d74",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailModeratoreAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "ad7d0e32-c2ad-42e5-a8fb-a6431d714429",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "css=#passwordModeratoreAlert strong",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "f8f9f59d-5cbb-4676-844b-968a9fa56962",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=moderatorAdded",
+      "targets": [
+        ["id=moderatorAdded", "id"],
+        ["css=#moderatorAdded", "css:finder"],
+        ["xpath=//div[@id='moderatorAdded']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "515ce672-97a7-4f16-8f45-f42e72e94572",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='moderatorAdded']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Moderatore registrato al sistema con successo')]", "xpath:innerText"]
+      ],
+      "value": "Moderatore registrato al sistema con successo"
+    }, {
+      "id": "ac972402-50fd-4d7f-a4d8-ee058d58109c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "5da2ed3c-bf51-4e4f-a228-e898dea1c63a",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=moderatorAdded"
+    }]
+  }],
+  "suites": [{
+    "id": "5c883e71-713e-43ee-98ea-bd1c138d7df8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ef0ce90-5652-4385-aa1c-b36f03fc6fd9"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

@@ -1,0 +1,159 @@
+{
+  "id": "c02f1968-e103-48f6-a3b0-46511f76ef64",
+  "version": "2.0",
+  "name": "Test_Approva/RespingiAppunto",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "cd988d59-317c-491c-a046-ecab6c372036",
+    "name": "Test_ApprovaAppunto 2.2.1 (Respingi)",
+    "commands": [{
+      "id": "703bdd43-998f-48cc-a236-96ba2635fa2f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cde3a38-fb58-4b83-a949-16e2c59c5bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Respingi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7056a46-15c1-45f3-b70c-94061fec5491",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=denied",
+      "targets": [
+        ["id=denied", "id"],
+        ["css=#denied", "css:finder"],
+        ["xpath=//div[@id='denied']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f05c949-6478-40be-94e5-75774f76a531",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='denied']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "L'appunto è stato respinto"
+    }, {
+      "id": "12c32110-1283-4945-85b9-61934137040f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "088483ef-3029-45ea-82e3-3cd68bb7e2e9",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=denied"
+    }]
+  }, {
+    "id": "fed16569-8db8-4c55-9833-2991dedbf2a4",
+    "name": "Test_ApprovaAppunto 2.2.2 (Approva)",
+    "commands": [{
+      "id": "24854ce7-56ba-4ce5-a87d-1f6b541d6b12",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "236aab4e-6c72-4987-a8f4-b8b899cd5ba1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-light:nth-child(1) .col-12:nth-child(3) > .btn",
+      "targets": [
+        ["css=.bg-light:nth-child(1) .col-12:nth-child(3) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Approva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2035f922-5586-48eb-ac7f-be740647b115",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=approved",
+      "targets": [
+        ["id=approved", "id"],
+        ["css=#approved", "css:finder"],
+        ["xpath=//div[@id='approved']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "deb9c93a-f03c-43a0-b588-d355957205ba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='approved']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "L'appunto è stato approvato"
+    }, {
+      "id": "f925a7ac-9160-4912-be03-82c846ae4669",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b9f9aff6-c368-4fd5-a5a0-f02355710316",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=approved"
+    }]
+  }, {
+    "id": "704f65c1-4917-4e98-9705-ba5b33338312",
+    "name": "Test_ApprovaAppunto 2.2.3 (Nessun appunto presente)",
+    "commands": [{
+      "id": "73706102-c3eb-4fd6-9b87-7000026325fc",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8eba2271-8c46-4959-a52f-b19acc942406",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Al momento non ci sono prodotti da revisionare!')]", "xpath:innerText"]
+      ],
+      "value": "Al momento non ci sono prodotti da revisionare!"
+    }]
+  }],
+  "suites": [{
+    "id": "cdefa393-1750-404b-a346-fb22171ead24",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd988d59-317c-491c-a046-ecab6c372036"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

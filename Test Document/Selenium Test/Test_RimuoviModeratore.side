@@ -1,0 +1,140 @@
+{
+  "id": "c1baa530-b4b0-49a0-9d70-e8bf87ed7cfb",
+  "version": "2.0",
+  "name": "Test_RimuoviModeratore",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "67fffa1b-fa2d-4672-8673-a7986e6cab66",
+    "name": "Test_RimuoviModeratore 6.2.2 (Successful)",
+    "commands": [{
+      "id": "3530c500-05aa-4844-95a1-3a677995f96c",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f6b26ec-e66d-44fe-96b6-ca515f900a95",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rimuoviModeratoreForm .btn",
+      "targets": [
+        ["css=#rimuoviModeratoreForm .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='rimuoviModeratoreForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rimuovi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b854429b-e63e-4aa4-ba76-551795a53468",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=moderatoreRemoved",
+      "targets": [
+        ["id=moderatoreRemoved", "id"],
+        ["css=#moderatoreRemoved", "css:finder"],
+        ["xpath=//div[@id='moderatoreRemoved']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "092aa1fa-4d17-4ee6-9213-d140f6ef2c47",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='moderatoreRemoved']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Moderatore rimosso dal sistema con successo')]", "xpath:innerText"]
+      ],
+      "value": "Moderatore rimosso dal sistema con successo"
+    }, {
+      "id": "15393ae7-2f1f-4905-a0cc-84a962535c20",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "aad1347b-7ecb-42aa-8477-e474f6256936",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=moderatoreRemoved"
+    }]
+  }, {
+    "id": "48e59f84-67fb-4271-bf26-f13181cc7b60",
+    "name": "Test_RimuoviModeratore 6.2.1 (Un solo mod presente)",
+    "commands": [{
+      "id": "32cc4f19-0902-4fd8-a6ab-3586b6157a28",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03107d9a-dcf5-43a4-a4c2-1b9a0931a55c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rimuoviModeratoreForm .btn",
+      "targets": [
+        ["css=#rimuoviModeratoreForm .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='rimuoviModeratoreForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rimuovi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6fb8f42-42ba-4d75-891b-de60367d78dd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=outOfBounds",
+      "targets": [
+        ["id=outOfBounds", "id"],
+        ["css=#outOfBounds", "css:finder"],
+        ["xpath=//div[@id='outOfBounds']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c70fb575-c2bc-4715-8498-5a3d8f32ad61",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='outOfBounds']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "Impossibile rimuovere l'unico moderatore presente"
+    }, {
+      "id": "1ba8ae68-d33e-48b4-a741-9a9e3992f4c9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "c5ebbaaf-9fdf-402c-8134-cc271eaf7eac",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=outOfBounds"
+    }]
+  }],
+  "suites": [{
+    "id": "8ea281ad-538b-49f3-be9b-026d9964eb0f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67fffa1b-fa2d-4672-8673-a7986e6cab66"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

@@ -1,0 +1,611 @@
+{
+  "id": "96e882ad-28f7-4806-8371-20c2fbb1c322",
+  "version": "2.0",
+  "name": "Test_ContattareTramiteEmail",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "fca48e9a-fb1e-4b44-8265-a28f4e116fca",
+    "name": "Test_ContattoEmail 5.1.1 (Formato nome errato)",
+    "commands": [{
+      "id": "c061f3b9-7e04-42a2-bda1-4f77b55b98a7",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/contatti.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68480875-99b9-420d-aaa5-0b20a23d89a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6333881-8962-4828-af94-7d2b7eae3914",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine892"
+    }, {
+      "id": "351ef22d-b7eb-4040-89b9-fcfa1ead4eb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'INVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2d7da1-068e-45ac-8fa4-1ed56883a8cf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1da916a1-4812-4512-a044-c5df514afcba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//span/strong", "xpath:position"]
+      ],
+      "value": "Errore durante l'inserimento dei dati"
+    }]
+  }, {
+    "id": "eb7e7e1d-43a1-4241-8e67-3683bf908c8b",
+    "name": "Test_ContattoEmail 5.1.2 (Formato cognome errato)",
+    "commands": [{
+      "id": "7fb25119-4647-4351-ad6b-214bafb9dff7",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/contatti.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8fcbe17-8dec-447d-aece-05d138fdfcd5",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106118ed-ef87-4aac-9d2b-54aabe232d7a",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "bf7aace9-c9ba-490c-9bfa-0beb0e0da0bb",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "368a00cf-0d0c-4c72-a094-c592f732836e",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Amendola892"
+    }, {
+      "id": "36e71422-99e6-4360-a545-5ec8c7c79318",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'INVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9513d4dc-00d8-4854-bb6b-849e2c8d8240",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36f1f58b-d874-470e-a9f4-d46f0bdaaead",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//span/strong", "xpath:position"]
+      ],
+      "value": "Errore durante l'inserimento dei dati"
+    }]
+  }, {
+    "id": "7f91282b-d800-4541-86d9-a10cadca4919",
+    "name": "Test_ContattoEmail 5.1.3 (Formato e-mail errato)",
+    "commands": [{
+      "id": "acfc3d9b-14aa-4b57-8565-529ecbe4a0fa",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/contatti.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a616bf-c68e-40a7-8cef-dddf93d430cd",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34e5b00b-21ec-4714-b2e2-9ffb78d3bf52",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "e0074263-d358-45b0-8215-ff964d6ef99a",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "897b4459-8b25-410d-8daa-718121457781",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Amendola"
+    }, {
+      "id": "64ec01b2-6706-4369-84f6-f18c38b12500",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3951e312-c4be-4775-a23a-15f14f08e20b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "email@a"
+    }, {
+      "id": "32e2bf60-e27d-475c-b9fe-c1fbca47f8fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'INVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7f334f2-182b-4507-ab3e-cbcce566a5ae",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b606630-9e6c-45a1-bbe5-206988b909b4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//span/strong", "xpath:position"]
+      ],
+      "value": "Errore durante l'inserimento dei dati"
+    }]
+  }, {
+    "id": "477f053d-c48c-4cc2-864b-155f7144a021",
+    "name": "Test_ContattoEmail 5.1.4 (Formato messaggio errato, Form completo)",
+    "commands": [{
+      "id": "bd50a34b-4285-44e4-afcc-a40a08fc9a8f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/contatti.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9a052bc-171c-4d7c-8888-cf4e5fea3535",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da127171-0fbf-46b0-a98a-4dbb63853438",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "19116dc3-a234-42ba-9302-0f6b7f7e2f6b",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b47073d3-856f-449c-87b2-aeb338a90d82",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Amendola"
+    }, {
+      "id": "c77fdf6c-ed24-4c62-aae7-9ea0536d9dda",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5642f40-deba-4a82-a84a-2e271f5775ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "carmineamendola92@hotmail.it"
+    }, {
+      "id": "1de7bf1f-b6cc-49a8-ad79-44436c3a8222",
+      "comment": "",
+      "command": "click",
+      "target": "name=testo",
+      "targets": [
+        ["name=testo", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//textarea[@name='testo']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "990cbed9-5aae-4a84-9ec3-0594a526df44",
+      "comment": "",
+      "command": "type",
+      "target": "name=testo",
+      "targets": [
+        ["name=testo", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//textarea[@name='testo']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ciao"
+    }, {
+      "id": "a5c8689b-7435-425d-96f9-2fade863b080",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'INVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "855d8c3a-4057-4902-8900-062730263aca",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eff14b3-96f4-4a89-acf4-36a1d0d1df65",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//span/strong", "xpath:position"]
+      ],
+      "value": "Errore durante l'inserimento dei dati"
+    }]
+  }, {
+    "id": "ef41b3a1-bc42-486c-9d2e-7243c788d1dc",
+    "name": "Test_ContattoEmail 5.1.5 (Successful)",
+    "commands": [{
+      "id": "f272719b-85df-4392-91bd-aaea016d835b",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/contatti.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52bdbb7d-d4bd-4f05-9b77-459de0514582",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b62188f4-9362-44c1-8a4f-5a72f8916b7a",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine"
+    }, {
+      "id": "cb812eb6-7482-4e11-ba14-e817796d89de",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32535bc4-333c-46a2-bf05-a355415ca1f8",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Amendola"
+    }, {
+      "id": "f338a548-cf58-40ea-9f3c-f405c4001b1e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f9b5fff-4571-44b0-95f1-bd51d4738e37",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "carmineamendola92@hotmail.it"
+    }, {
+      "id": "c0967e75-8103-4fc9-ac1b-098f37133d51",
+      "comment": "",
+      "command": "click",
+      "target": "name=testo",
+      "targets": [
+        ["name=testo", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//textarea[@name='testo']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e41a6b1c-1ffe-40c3-a159-ab85d0b64ff1",
+      "comment": "",
+      "command": "type",
+      "target": "name=testo",
+      "targets": [
+        ["name=testo", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//textarea[@name='testo']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": " Ciao, vi contatto per chiedere informazioni per diventare tutor."
+    }, {
+      "id": "1e8efd01-6a1c-4b05-8a90-72d56e396b20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'INVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ce949d7-567c-4685-808d-7c281c3b60aa",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=alert",
+      "targets": [],
+      "value": "60000"
+    }, {
+      "id": "e3575532-c338-4570-8d24-ab3e84394935",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='contenitore']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7abadd82-391b-4fe5-8ee9-4298005cf88c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//span/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Abbiamo ricevuto la tua richiesta di contattato. Riceverai una nostra risposta via e-mail. Grazie')]", "xpath:innerText"]
+      ],
+      "value": "Abbiamo ricevuto la tua richiesta di contattato. Riceverai una nostra risposta via e-mail. Grazie"
+    }]
+  }],
+  "suites": [{
+    "id": "1e7b61e8-dd39-4898-ac33-f50ae5b4dcf0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fca48e9a-fb1e-4b44-8265-a28f4e116fca"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

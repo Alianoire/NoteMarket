@@ -1,0 +1,1538 @@
+{
+  "id": "fd75e077-c1c7-4194-a334-afcd5645d435",
+  "version": "2.0",
+  "name": "Test_Registrazione",
+  "url": "http://localhost/NoteMarket",
+  "tests": [{
+    "id": "3c0fc446-0584-46ce-a4df-41d40ae240aa",
+    "name": "Test_Registrazione 1.2.9 (Successful)",
+    "commands": [{
+      "id": "bb5574c1-e789-4500-becd-b1e606f62b68",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b0cca2-c8e0-48f3-a675-9bdc318eac6a",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cbf845e-9b03-48f9-a6e2-f2803dda6667",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "4f5578cb-de6a-490d-9e42-599c51a8adf1",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f922ea5-d7f2-41a9-821e-06472430c3db",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "f04478dd-9877-4731-a73e-40c49fcaab5b",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84c8c74a-202c-4ce9-b8aa-4cbccf0fae1b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirente2@email.it"
+    }, {
+      "id": "af526cc4-97f3-4931-a6fa-94d22d745c35",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f35ab42-1d35-4680-b574-d3dff10304e3",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1992-02-04"
+    }, {
+      "id": "95735d5b-04c8-4939-b897-17df903530e0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fdbec25-ed0b-46b0-add5-2c9135f0caac",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "ebfcd4ea-61cc-4305-ba36-db3f1e06e43d",
+      "comment": "",
+      "command": "click",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57b7c62f-6ad1-4c66-a93c-c2fdbb750e08",
+      "comment": "",
+      "command": "type",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "067f4132-f8b4-43f5-a5be-3baefedaf230",
+      "comment": "",
+      "command": "click",
+      "target": "name=policy",
+      "targets": [
+        ["name=policy", "name"],
+        ["css=.d-sm-flex > input", "css:finder"],
+        ["xpath=//input[@name='policy']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6765526-c48c-4241-b92b-b3a092739f26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87d89ca1-e32d-495a-ad6e-c0900c37f649",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//div[@id='confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ddd84c-484a-454a-8c04-7dc6f1afcc03",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='confirm']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "Registrazione avvenuta con successo! Clicca sul link ricevuto via email per confermare l'account"
+    }, {
+      "id": "5d16cc1f-cf2a-4650-9220-9f5fd00ee5ef",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "5a2c8de4-9b4f-4a3b-90f1-67f78c1874e4",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/login.jsp?confirm=verifyAccount"
+    }]
+  }, {
+    "id": "81aef658-4dc1-4ff9-ac9b-340c5b6a2595",
+    "name": "Test_Registrazione 1.2.1 (Formato nome errato - Singolo Campo)",
+    "commands": [{
+      "id": "3922c588-2c77-4d50-9672-c20cd5924b2f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27ad97f8-cff1-4494-acb5-ff2c0ef8646e",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef911cde-281e-401e-a52a-d327d88ce7a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "489"
+    }, {
+      "id": "ba6d85ad-b076-4347-9dfb-d471e5a1f7e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9a447f9-2a38-40f8-bc45-8fb9bd115e3b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "893e1cf0-758f-4a4f-937c-142c1228d3d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Errore nella compilazione di uno/o più campi')]", "xpath:innerText"]
+      ],
+      "value": "Errore nella compilazione di uno/o più campi"
+    }]
+  }, {
+    "id": "f7e4dfca-2d84-40d2-86bc-4c237739c488",
+    "name": "Test_Registrazione 1.2.2 (Formato Cognome errato - Cognome, nome)",
+    "commands": [{
+      "id": "b68d310a-2fd9-4145-bec8-c8a3b7919d93",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "360f7457-0e69-4bfa-84e8-87f54ed6041f",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d10c18d7-0033-4438-9409-84c0795cf0b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "a5ef3ce5-d70d-4830-84e8-dcdb72788593",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef637309-fa60-47a7-872a-2dcaa298958d",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "489"
+    }, {
+      "id": "73dd9fe7-7238-425b-b69a-c68c2de9cea5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d14d2bbd-1e78-4dfc-9587-837432a1fa7e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cb4438d-7f2e-41ee-be54-14dfda64faa7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Errore nella compilazione di uno/o più campi')]", "xpath:innerText"]
+      ],
+      "value": "Errore nella compilazione di uno/o più campi"
+    }]
+  }, {
+    "id": "4deb6728-0c6f-4baa-8b9e-94d3f306ab31",
+    "name": "Test_Registrazione 1.2.3 (Formato E-mail errato, Nome, cognome, e-mail)",
+    "commands": [{
+      "id": "2d8d0a91-35a5-41f3-8542-4928f0ee8018",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f65215fb-8f2a-4d4a-a870-7a7e619e6766",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d4392d-5544-4752-8a51-f9150bfa0c93",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "8cfba509-1022-4621-af42-567de089e49f",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc01b8ac-ebe4-4d6f-9a9e-13048c21d944",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "877edbce-6ba0-4bf9-b33d-fdfb7598678a",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f332a3ce-7d3e-469e-ad2c-b76e4d2d3868",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "email@a"
+    }, {
+      "id": "bc436d33-a183-4e42-bd63-f2e154a6e905",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55685d6f-4f21-4d04-83dd-5ee6ccb10ef6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3a20c04-b6a9-4727-adae-897430a9a2de",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Errore nella compilazione di uno/o più campi')]", "xpath:innerText"]
+      ],
+      "value": "Errore nella compilazione di uno/o più campi"
+    }]
+  }, {
+    "id": "6c9c60e8-487a-4f43-907d-c7eab66b1c4e",
+    "name": "Test_Registrazione 1.2.4 (Formato Date errato, Nome, cognome, e-mail, date)",
+    "commands": [{
+      "id": "2b28eccf-2169-44eb-8461-347205fbf759",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deb526ed-70b4-4e04-ae81-86ce584ea516",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fd6392e-8aa9-40cb-898b-7facb3c12d91",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "3440b8d1-b1ad-4f90-b0c6-59f26d1c193a",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2a62f1-571c-49f1-a820-a098551bce7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "d008a401-4283-4d26-ab5d-db721438f6a1",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfaacc82-94fb-4bfa-864e-7035b976a9b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirente2@email.it"
+    }, {
+      "id": "72631297-7719-49c4-a276-abd0c125ad49",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89144f6f-0b31-415e-8506-77dd6e997748",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2016-02-04"
+    }, {
+      "id": "79910a13-b941-4697-807f-a11d8d6515ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd49f3c7-27be-4aa2-b18b-635e70ebf1b5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df95d0ea-cffe-4d46-9043-34cb1381fb6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#alert strong",
+      "targets": [
+        ["css=#alert strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/span/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Errore nella compilazione di uno/o più campi')]", "xpath:innerText"]
+      ],
+      "value": "Errore nella compilazione di uno/o più campi"
+    }, {
+      "id": "74fa4538-dd55-4355-ab78-1010611a0d28",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=dateAlert",
+      "targets": [
+        ["id=dateAlert", "id"],
+        ["css=#dateAlert", "css:finder"],
+        ["xpath=//div[@id='dateAlert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86ec1732-59b7-48ae-aa8a-cd9f79313540",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#dateAlert strong",
+      "targets": [
+        ["css=#dateAlert strong", "css:finder"],
+        ["xpath=//div[@id='dateAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Devi avere almeno 16 anni per effettuare la registrazione')]", "xpath:innerText"]
+      ],
+      "value": "Devi avere almeno 16 anni per effettuare la registrazione"
+    }]
+  }, {
+    "id": "aa8f3baa-1a68-4d70-9527-ef5f2f85a366",
+    "name": "Test_Registrazione 1.2.5 (Formato Password errato, Nome, cognome, e-mail, date)",
+    "commands": [{
+      "id": "b91a3899-3cda-4c21-bde4-06c398ec1a30",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2b12f8f-ca1c-4046-b731-635a37ee31b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "048b6af3-ba1f-4179-a0f3-c94581935750",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "bf29340f-57cd-4427-8f40-a8b7dac92de9",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da32a0cf-a696-465d-9f89-8b36b98aa7dc",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "939b8fe6-85a4-4aab-be52-4dc213b9e71c",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e33ef92-46ff-49c3-b967-c2a85889381c",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirente2@email.it"
+    }, {
+      "id": "a4678602-7d88-47fa-9ad2-aef5a879235c",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "984a76a3-96bd-4eb9-83e4-d907868aec63",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1992-02-04"
+    }, {
+      "id": "30efa73f-093e-48bb-9304-46718b8487be",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dcfb719-0ee4-4097-ac9a-0e24e7d2a903",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "unisais92"
+    }, {
+      "id": "23e4be80-d683-478a-8dfc-50fa2738f921",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7fae01f-695a-4e2d-aa2e-ea39f0dd54c9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "294ce937-41fb-47af-9b11-60e2fd730e96",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Errore nella compilazione di uno/o più campi')]", "xpath:innerText"]
+      ],
+      "value": "Errore nella compilazione di uno/o più campi"
+    }]
+  }, {
+    "id": "29e775dd-8538-41a6-b97e-e523519e8fd8",
+    "name": "Test_Registrazione 1.2.6 (Password Conferma diversa, form completo)",
+    "commands": [{
+      "id": "cc681167-d742-4500-b9dc-858972a56bdf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d726efd-e7a5-4c32-b320-dca21f7626fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48fa2345-be23-4c17-bed5-95f944ba64e9",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "c75961e7-de8d-4011-86fa-960797ce6b22",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a86952be-923a-468e-8bca-2fab0818f349",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "48daeff4-143e-423d-9bfb-202d5f2bc43f",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dcdbd31-af46-4f12-9d96-8a259bdd4a8e",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirente2@email.it"
+    }, {
+      "id": "9e1ef785-b5d9-4a9a-852d-559c4bd46c98",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f51c4d8-f01b-470f-8e1b-c1e4b8f4bdd1",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1992-02-04"
+    }, {
+      "id": "a99552ae-3440-4455-af63-c245c373c912",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3641c2a2-cc4c-49f4-8f68-de44183ea5a9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "667da006-14d1-4c65-b84b-45478f6ac2fb",
+      "comment": "",
+      "command": "click",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5078308-ae92-4792-a362-40dd8fa27d3f",
+      "comment": "",
+      "command": "type",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "unisaIS92"
+    }, {
+      "id": "e2b394d5-9c5c-4094-a8dd-066284e3dfdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0894b99e-c595-44dc-b2b1-4cfb29da11b5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a7c4ec-6709-449b-b854-5e0be1130f4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Le password non corrispondono')]", "xpath:innerText"]
+      ],
+      "value": "Le password non corrispondono"
+    }]
+  }, {
+    "id": "30b81d30-7b3d-4fb0-ad75-1e6238aec8a5",
+    "name": "Test_Registrazione 1.2.7 (Condizioni d'uso non accettate, form completo)  ",
+    "commands": [{
+      "id": "8c45d05a-4e3c-4d73-88e4-0042c3e43054",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4cdfe03-4112-481f-baee-6d42914094a3",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfd9ae55-ff27-4eaa-acbb-02d04568d8f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "fc91862d-1bc3-4eee-9543-8efeac1a75ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec2c368-0b18-4d78-aedd-96fee9bafec6",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "bac13977-c6d0-4939-84be-21fb52712db9",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8949e2f8-670a-42c1-9dc8-54dadd2f7ff9",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirente2@email.it"
+    }, {
+      "id": "244334b4-e5da-49c3-a3b5-6764da53a886",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54316509-4464-4cb1-9634-3e5115543a6c",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1992-02-04"
+    }, {
+      "id": "b1ba95eb-0f8b-4e5b-9df8-c94958e81549",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a99f1bd-14e3-4724-b4ab-0e64a3de5ef3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "b965af84-4b34-45ec-9307-925354aa9e03",
+      "comment": "",
+      "command": "click",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af5a069-e1f1-4b25-b0f1-95ee466e978e",
+      "comment": "",
+      "command": "type",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "3a43d461-6338-4df0-8dee-d222833d15f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63ebd635-128b-4cd5-9dca-cb302fa256f5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=policyAlert",
+      "targets": [
+        ["id=policyAlert", "id"],
+        ["css=#policyAlert", "css:finder"],
+        ["xpath=//div[@id='policyAlert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f9fd83d-2c88-43d4-aa3f-7134a11f1b1b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='policyAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "Devi prima accettare le condizioni d'uso"
+    }]
+  }, {
+    "id": "e5528710-0b3f-4ec7-944c-e9bfd3653dec",
+    "name": "Test_Registrazione 1.2.8 (Email già presente, form completo) ",
+    "commands": [{
+      "id": "05a73120-9079-4a35-8012-a04764b5a017",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/registrazione.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4589ca0e-d230-4472-a481-8ce705f69443",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "493daca9-4c6f-4ebb-91c9-428403955c06",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antonio"
+    }, {
+      "id": "605d85b9-62b2-4ee2-b08a-e50ea57db6b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37037593-bfe7-4229-aea2-eec371bea86a",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [
+        ["name=cognome", "name"],
+        ["css=.form-row:nth-child(2) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='cognome']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Cirillo"
+    }, {
+      "id": "a7b8c639-629b-45d1-a935-cc33fef49d8e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eeb3a28-68d1-46ea-8f9b-c12578be6024",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "ea6e4a19-ad71-41c8-9268-caec8576356e",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9e748c0-35ea-42f1-9ebb-be9c515cc65d",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiNascita",
+      "targets": [
+        ["name=dataDiNascita", "name"],
+        ["css=.form-row:nth-child(3) > .col-12:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='dataDiNascita']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1992-02-04"
+    }, {
+      "id": "a8a2b261-29b7-4d7a-b4d5-110af83c8420",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8694196a-c7cf-4b38-8496-de514e09a5d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-row:nth-child(4) > .col-12 .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "42d31f0a-7200-46ca-bf4b-c3f3573658f8",
+      "comment": "",
+      "command": "click",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6d189be-b5a2-4c85-987b-730612973f43",
+      "comment": "",
+      "command": "type",
+      "target": "name=confermaPassword",
+      "targets": [
+        ["name=confermaPassword", "name"],
+        ["css=.col .form-control", "css:finder"],
+        ["xpath=//input[@name='confermaPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "UnisaIS92"
+    }, {
+      "id": "fae7a4b6-14de-422d-bb4f-c08a50cd9632",
+      "comment": "",
+      "command": "click",
+      "target": "name=policy",
+      "targets": [
+        ["name=policy", "name"],
+        ["css=.d-sm-flex > input", "css:finder"],
+        ["xpath=//input[@name='policy']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b7145f1-39a3-4598-91c0-6c224ce8b401",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='registrazione']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc265027-cf81-4ab1-9d97-3b896b06bf77",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='headingForm']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2edb7cd2-a18c-40ff-8de6-581bdbc58322",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='headingForm']/div[2]/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Email già associata ad un account')]", "xpath:innerText"]
+      ],
+      "value": "Email già associata ad un account"
+    }, {
+      "id": "eea36e69-61a2-4c65-98d3-389e680922ab",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "1bc5256b-d299-4177-a30f-b693ba331658",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/registrazione.jsp?error=emailAlreadyExists"
+    }]
+  }],
+  "suites": [{
+    "id": "6ade1f5d-597d-4cc5-83ba-999185308f60",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/", "http://localhost/NoteMarket"],
+  "plugins": []
+}

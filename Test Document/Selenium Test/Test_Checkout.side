@@ -1,0 +1,216 @@
+{
+  "id": "1df973ce-7a8f-40f9-b7b2-d13501d2bc5d",
+  "version": "2.0",
+  "name": "Test_Checkout",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "c66a0a61-cc48-45be-8172-03f344b191fe",
+    "name": "TestCheckout 4.3.2 (Carta di credito non presente)",
+    "commands": [{
+      "id": "2396d59f-7cbf-4725-9d5c-29db4f05b3bb",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a097d51-3fa6-485b-84bb-33e664d04b0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='navcol-1']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c7098b-148b-4f28-b3af-b27e30a91449",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ACQUISTA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abc2c1e7-1214-432f-a66b-2fc2706f729c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ace3079-98e5-4772-a89b-37a82ed08cfb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Nessuna carta di credito selezionata')]", "xpath:innerText"]
+      ],
+      "value": "Nessuna carta di credito selezionata"
+    }]
+  }, {
+    "id": "19449302-155a-4bde-9d66-a6490128656e",
+    "name": "TestCheckout 4.3.3 (Successful)",
+    "commands": [{
+      "id": "0cc84e11-ddae-48f1-98cf-3ba136c06e8f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c161901-838f-4af2-8546-bcb152c5141f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='navcol-1']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7059f8d4-d8c7-469d-8193-6efbe21b15a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ACQUISTA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e464744b-464b-4aa0-9a45-c864681e9d01",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=checkoutCart",
+      "targets": [
+        ["id=checkoutCart", "id"],
+        ["css=#checkoutCart", "css:finder"],
+        ["xpath=//div[@id='checkoutCart']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "594e80fe-d6fe-42a5-bfb7-59b97d81b7aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='checkoutCart']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Acquisto effettuato con successo')]", "xpath:innerText"]
+      ],
+      "value": "Acquisto effettuato con successo"
+    }, {
+      "id": "7c1235da-4317-4d9b-aaf2-8fbd07f61f9c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "e3812fe7-4b4d-4059-9909-543a3c999a76",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=checkoutCart"
+    }]
+  }, {
+    "id": "2eaa9fa5-3d81-426e-9009-3826e6e6b44f",
+    "name": "TestCheckout 4.3.1 (Carrello vuoto)",
+    "commands": [{
+      "id": "c1f2756d-d790-4142-b329-025ded9e3aa5",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abfcdaf8-82c8-4be6-a288-6b11af5f107a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='navcol-1']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45f73026-0036-4d63-8a02-6ef9fb477288",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ACQUISTA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "671234d9-4f80-44ef-b033-2c3a7da3415c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Non ci sono prodotti nel carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ff50fef-f229-4da5-a390-288be3a341b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Non ci sono prodotti nel carrello')]", "xpath:innerText"]
+      ],
+      "value": "Non ci sono prodotti nel carrello"
+    }]
+  }],
+  "suites": [{
+    "id": "894c5602-5b15-42e1-bdf9-cc1eda7a1599",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c66a0a61-cc48-45be-8172-03f344b191fe"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

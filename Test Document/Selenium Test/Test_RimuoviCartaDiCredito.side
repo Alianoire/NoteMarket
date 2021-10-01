@@ -1,0 +1,155 @@
+{
+  "id": "db1d3bcc-b4e6-4c62-80a6-b9f922c575dc",
+  "version": "2.0",
+  "name": "Test_RimuoviCartaDiCredito",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "a93c9abe-56b2-4c2b-8014-8716ce0edf15",
+    "name": "Test_RimuoviCartaDiCredito 1.6.2 (Successul)",
+    "commands": [{
+      "id": "f592f952-171d-429b-84e9-26353d5224f5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e4b5e42-4ffd-4905-bf5b-852a1ad03544",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc1e16d-4f12-4fd8-ab83-d43527032de5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(2) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='eliminaCartaDiCredito']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a98571d-295f-4f56-a3ec-e284382b00b8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=creditCartRemoved",
+      "targets": [
+        ["id=creditCartRemoved", "id"],
+        ["css=#creditCartRemoved", "css:finder"],
+        ["xpath=//div[@id='creditCartRemoved']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e97da3b-a5a7-480f-80ff-556325db6b15",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='creditCartRemoved']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Carta di credito rimossa con successo')]", "xpath:innerText"]
+      ],
+      "value": "Carta di credito rimossa con successo"
+    }, {
+      "id": "e06eb0b5-a052-45c7-8c41-2f5ba3959ceb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "154afd9a-344c-4db5-8eab-9b0127656f88",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=creditCartRemoved"
+    }]
+  }, {
+    "id": "55e69b1e-4440-409a-8ce9-96ac4909bce1",
+    "name": "Test_RimuoviCartaDiCredito 1.6.1 (Nessuna carta presente)",
+    "commands": [{
+      "id": "2bc14b9a-e2ef-42aa-9bd8-be36a104890b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f49f616d-fa89-463f-b4f1-c5e31adf5f3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c8a7c7-75d2-46e1-ba2b-0f91b8aacb8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(2) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='eliminaCartaDiCredito']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "306f1ddf-4ded-4a29-8fa9-608fc1eb335c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=noFoundCreditCart",
+      "targets": [
+        ["id=noFoundCreditCart", "id"],
+        ["css=#noFoundCreditCart", "css:finder"],
+        ["xpath=//div[@id='noFoundCreditCart']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2600d1d5-428d-4ac3-bafa-486f44846b9d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='noFoundCreditCart']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Per poter procedere con gli acquisti devi associare una carta di credito al tuo account')]", "xpath:innerText"]
+      ],
+      "value": "Per poter procedere con gli acquisti devi associare una carta di credito al tuo account"
+    }]
+  }],
+  "suites": [{
+    "id": "38dee485-9898-48ae-8274-97055cb3b574",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a93c9abe-56b2-4c2b-8014-8716ce0edf15"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

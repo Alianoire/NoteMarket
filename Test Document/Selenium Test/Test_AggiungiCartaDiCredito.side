@@ -1,0 +1,758 @@
+{
+  "id": "a2ee9a88-9998-4d1b-b026-9900177b7cd4",
+  "version": "2.0",
+  "name": "Test_AggiungiCartaDiCredito",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "122b0d88-ab32-4e9f-9186-7f2db2767a77",
+    "name": "Test_AggiungiCartaDiCredito 1.5.1 (Formato nome errato)",
+    "commands": [{
+      "id": "38bf5265-0699-467d-9b4d-836bc909fc65",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3adb0245-604d-4307-b43c-256f69d77bfa",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2ca7f3-136f-4026-85f5-ab28f92484b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "160a4af6-5850-40f0-bb98-19a57f539af4",
+      "comment": "",
+      "command": "type",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine892"
+    }, {
+      "id": "f57f3ee7-5c97-4082-aed6-a5d0d1dff61d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(4) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf1aacf4-5951-4bde-964a-2137d3e77a14",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nomeIntestAlert",
+      "targets": [
+        ["id=nomeIntestAlert", "id"],
+        ["css=#nomeIntestAlert", "css:finder"],
+        ["xpath=//div[@id='nomeIntestAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01898a76-ba9f-415d-b663-e3c3129b2859",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#nomeIntestAlert strong",
+      "targets": [
+        ["css=#nomeIntestAlert strong", "css:finder"],
+        ["xpath=//div[@id='nomeIntestAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "campo mancante/errato"
+    }, {
+      "id": "43e95c9c-8f4a-4203-8efa-49a620b018ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=numeroCartaAlert",
+      "targets": [
+        ["id=numeroCartaAlert", "id"],
+        ["css=#numeroCartaAlert", "css:finder"],
+        ["xpath=//div[@id='numeroCartaAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef7dabb-47cc-4a49-967d-17f163dc6ccd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#numeroCartaAlert strong",
+      "targets": [
+        ["css=#numeroCartaAlert strong", "css:finder"],
+        ["xpath=//div[@id='numeroCartaAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "campo mancante/errato"
+    }, {
+      "id": "d58a5ec6-c82b-4e2f-93ea-0f88d9750bff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=scadenzaAlert",
+      "targets": [
+        ["id=scadenzaAlert", "id"],
+        ["css=#scadenzaAlert", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b72fd29-4a10-4144-8412-9adc8ed721a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#scadenzaAlert strong",
+      "targets": [
+        ["css=#scadenzaAlert strong", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "campo mancante/errato"
+    }]
+  }, {
+    "id": "216eb198-db08-41a7-be7c-90d24df0f930",
+    "name": "Test_AggiungiCartaDiCredito 1.5.2 (Formato numero carta errato)",
+    "commands": [{
+      "id": "85edf4ae-282d-44d2-b864-73d1c2d462a9",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "385630e1-ec14-46ea-bb87-7f132065d678",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ab4964-9e58-401d-9843-d746f7f23988",
+      "comment": "",
+      "command": "click",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56bfd0ff-2b10-4a15-b8b6-dff30211ae92",
+      "comment": "",
+      "command": "type",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine Amendola"
+    }, {
+      "id": "6f834cd5-f137-448c-9e4e-71f296e3aead",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5cde51-fc96-4418-9ec9-c7a5d3010772",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678901232145"
+    }, {
+      "id": "9da81d1b-c635-4e85-9d17-a444b650227a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(4) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d08c189-54e9-43c7-bbae-86cb35b0273a",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeIntestAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "9564c0a1-1b89-4d15-8275-286fd8f1412d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=numeroCartaAlert",
+      "targets": [
+        ["id=numeroCartaAlert", "id"],
+        ["css=#numeroCartaAlert", "css:finder"],
+        ["xpath=//div[@id='numeroCartaAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f38aa6-2c68-48cb-b05c-f991fb8ab390",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#numeroCartaAlert strong",
+      "targets": [
+        ["css=#numeroCartaAlert strong", "css:finder"],
+        ["xpath=//div[@id='numeroCartaAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "campo mancante/errato"
+    }, {
+      "id": "ba8d9310-f5d6-4510-b517-b79c3fcd0f26",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=scadenzaAlert",
+      "targets": [
+        ["id=scadenzaAlert", "id"],
+        ["css=#scadenzaAlert", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "310011fe-b6f9-4f1d-a055-672ad763dde8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#scadenzaAlert strong",
+      "targets": [
+        ["css=#scadenzaAlert strong", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "campo mancante/errato"
+    }]
+  }, {
+    "id": "46451f7d-e5eb-4154-97eb-190ca5251a3b",
+    "name": "Test_AggiungiCartaDiCredito 1.5.4 (Carta già presente)",
+    "commands": [{
+      "id": "6b909b63-7315-4842-a18a-acd7a79843fd",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1315a346-e66c-4399-8250-3cfb6a8db643",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d931ba9-0e2f-427b-96ae-be31920385a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf99e1fb-a9f9-49f2-a5f0-8aad9c7919f4",
+      "comment": "",
+      "command": "type",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine Amendola"
+    }, {
+      "id": "f8eccf3a-0c24-40bf-b188-9f603a05d21a",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e93554-215a-491b-9d55-26a1c5d12704",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234567891234561"
+    }, {
+      "id": "76ba30e0-f248-4bb9-9d78-4bed27969950",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af0605b7-84fd-43ff-afe3-5985b80d85a2",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2022-02-04"
+    }, {
+      "id": "05d5b7f5-acc9-4d79-a9bd-167e35895f2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(4) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "430badd8-5f64-42fe-b08f-96566391cc41",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=numberCardAlreadyExists",
+      "targets": [
+        ["id=numberCardAlreadyExists", "id"],
+        ["css=#numberCardAlreadyExists", "css:finder"],
+        ["xpath=//div[@id='numberCardAlreadyExists']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ebb8784-ccf1-4ee8-94aa-1366a696912e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='numberCardAlreadyExists']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Carta di credito già associata ad un account')]", "xpath:innerText"]
+      ],
+      "value": "Carta di credito già associata ad un account"
+    }, {
+      "id": "3f56c68a-4e83-4e20-a57c-f5c7e4726172",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "de5fb7c9-e2ee-4df3-970f-a6865a46582c",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=numberCardAlreadyExists"
+    }]
+  }, {
+    "id": "ab271235-b849-40a4-9580-eab0ecb96e78",
+    "name": "Test_AggiungiCartaDiCredito 1.5.3 (Carta scaduta, Form completo)",
+    "commands": [{
+      "id": "f6d0f649-0f63-4b7f-b2c3-7132e3c1108f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cc9b03a-63cf-438b-9f88-d3a078684e87",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9ed8298-51fa-4af8-872a-b4cdbec2f863",
+      "comment": "",
+      "command": "click",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7872accb-71f6-4429-9a9c-e0e57d9117f8",
+      "comment": "",
+      "command": "type",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine Amendola"
+    }, {
+      "id": "eb13dc11-de77-40ca-b494-288543baaec8",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23128850-6c3d-49a5-95c9-90d8cd67f80b",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234567890123214"
+    }, {
+      "id": "db78de54-c121-48a0-86f5-c881c1b083c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "086e8405-066f-41a9-bd67-6740a02384a1",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2020-02-04"
+    }, {
+      "id": "3a7988af-2fd9-4b65-9c82-96cbc72c0491",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(4) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d17874-af0f-4c5d-b34f-5db6359731df",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nomeIntestAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "90e7cfd1-3aaa-460e-85e2-d8bb5374640c",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=numeroCartaAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "2be58374-0d70-4649-af49-b909c8f411ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=scadenzaAlert",
+      "targets": [
+        ["id=scadenzaAlert", "id"],
+        ["css=#scadenzaAlert", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8becc22-ec4c-4c16-81f0-2e0e66a7ad8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#scadenzaAlert strong",
+      "targets": [
+        ["css=#scadenzaAlert strong", "css:finder"],
+        ["xpath=//div[@id='scadenzaAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "campo mancante/errato"
+    }]
+  }, {
+    "id": "f22885f7-685a-4c62-9888-a8cba279a931",
+    "name": "Test_AggiungiCartaDiCredito 1.5.5 (Successful)",
+    "commands": [{
+      "id": "1938c3e4-4c4b-48ac-959c-eb14c458d73f",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dffb8b6a-f9e6-40d2-9533-34b98e947c5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carte di Credito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc3b152e-91c9-4593-93a6-008bdbe45771",
+      "comment": "",
+      "command": "click",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab30b2d9-167d-49df-a0ff-6af78a18a244",
+      "comment": "",
+      "command": "type",
+      "target": "name=intestatarioCarta",
+      "targets": [
+        ["name=intestatarioCarta", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='intestatarioCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carmine Amendola"
+    }, {
+      "id": "676b7ffb-d289-429f-bbdc-9d1fd40fe6e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a0fa09e-68e5-4b57-baf3-d6d7217acf15",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroDellaCarta",
+      "targets": [
+        ["name=numeroDellaCarta", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='numeroDellaCarta']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234567890123214"
+    }, {
+      "id": "a505603d-aac2-41a2-ba27-2e2360cd9431",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ef8ba94-b787-4930-ad95-89284e12e631",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataDiScadenza",
+      "targets": [
+        ["name=dataDiScadenza", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='dataDiScadenza']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2022-02-04"
+    }, {
+      "id": "f0d73163-c7be-4db1-a753-d8587eb4ae4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(4) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='aggiungiCartaDiCredito']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Aggiungi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "710c35b7-230a-4720-b176-830d07337813",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=creditCartAdded",
+      "targets": [
+        ["id=creditCartAdded", "id"],
+        ["css=#creditCartAdded", "css:finder"],
+        ["xpath=//div[@id='creditCartAdded']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "883e3af9-b711-48d1-b74c-45acd03c05db",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='creditCartAdded']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Carta di credito registrata con successo')]", "xpath:innerText"]
+      ],
+      "value": "Carta di credito registrata con successo"
+    }, {
+      "id": "22af0b08-1359-40f5-81ff-0842a5b7c02b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b55b53bb-3ded-42e9-8a23-2989726291aa",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=creditCartAdded"
+    }]
+  }],
+  "suites": [{
+    "id": "96a633f2-da51-4981-be96-4b0936774dc9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["122b0d88-ab32-4e9f-9186-7f2db2767a77"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

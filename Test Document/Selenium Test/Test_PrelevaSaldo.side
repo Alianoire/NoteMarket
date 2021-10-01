@@ -1,0 +1,906 @@
+{
+  "id": "be6e2f53-833f-4216-85c2-9ad6ef46bafc",
+  "version": "2.0",
+  "name": "Test_PrelevaSaldo",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "2d7d7e6c-79ec-40e6-a1b4-bdc82bd4da04",
+    "name": "Test_RimuoviSaldo 1.7.1 (Formato importo errato)",
+    "commands": [{
+      "id": "07261d07-aaa6-44cf-b6fb-ac52acc798f1",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aba2fcb-92c4-4bd2-9843-f25729d1d123",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc00e8af-e545-4769-ab64-9d9fc263b54c",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94eb9c42-317c-4df5-b9dd-b1ebee60a53b",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "110,99"
+    }, {
+      "id": "33b4e82c-d6df-4f7c-b253-77d9faacd712",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "724c19e2-956f-4b84-bd53-54c9220135cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a130a08a-2118-4b49-955a-e980f2f6160d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#saldoAlert strong",
+      "targets": [
+        ["css=#saldoAlert strong", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "e9203b54-f3c2-43ed-b9cf-976f6f887498",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=ibanAlert",
+      "targets": [
+        ["id=ibanAlert", "id"],
+        ["css=#ibanAlert", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be4200aa-5b60-406f-9b28-c082150f188c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#ibanAlert strong",
+      "targets": [
+        ["css=#ibanAlert strong", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "538ddc76-6bb8-49d9-8879-21aaa253a4bc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceb3bb9b-c524-47f2-a684-7b9ea15f2130",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "1afd964f-d90b-4864-96ea-314ad93a6cca",
+    "name": "Test_RimuoviSaldo 1.7.2 (Quantità importo errata) ",
+    "commands": [{
+      "id": "7ed05ecb-152d-4e81-9054-487787e5b9ed",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d5ed7f3-1b3a-4e02-b501-654aa8097f8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af2c8fda-099b-4f8a-b107-b3c7e1ba462d",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ef2229-9965-4167-8abd-8fea321a721c",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "110.99"
+    }, {
+      "id": "ef142ac7-6a2f-473d-9b0a-30f1339e2815",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a15b47b-1e19-440a-a4e0-04d55bcf24db",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "692fc443-d258-4c80-99c4-e9c5bc9085c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#saldoAlert strong",
+      "targets": [
+        ["css=#saldoAlert strong", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "957d1efd-1a6e-42aa-9287-2cdfabe6424e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=ibanAlert",
+      "targets": [
+        ["id=ibanAlert", "id"],
+        ["css=#ibanAlert", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ade769f6-588f-426a-9b59-0f40744a1429",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#ibanAlert strong",
+      "targets": [
+        ["css=#ibanAlert strong", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "cbfdbe59-0a37-4fbd-bd43-66eae49233b1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ebfe215-0629-4eb9-9502-65742a9c7554",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "33e3e501-a719-47b2-a4df-f06004be51bf",
+    "name": "Test_RimuoviSaldo 1.7.3 (Formato IBAN errato) ",
+    "commands": [{
+      "id": "98de892a-d4d5-4526-b667-8e3f4e17fa00",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "496892e2-e6ad-4a81-b64f-7868f6e0a972",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2adb3504-4479-48b1-ad1c-acb74bd2a1e3",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5104ae-d730-4ce1-a898-ce2076dcc5d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "90.99"
+    }, {
+      "id": "76634a89-bbd7-4719-b1ab-3eff440117b3",
+      "comment": "",
+      "command": "click",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90390fcc-f84f-4d5b-bea4-7d8998eb325c",
+      "comment": "",
+      "command": "type",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "I860 9054 2811 1010 0000 0123 456"
+    }, {
+      "id": "f92e1201-71f4-4253-934a-2857294f0184",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aabcde85-7c3b-47d7-bd4d-5e7f7f34a698",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "0e9cca3c-60d7-489b-84e7-9910fb96bd6c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=ibanAlert",
+      "targets": [
+        ["id=ibanAlert", "id"],
+        ["css=#ibanAlert", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a11633c-acc6-4a7b-b944-64827c4042e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#ibanAlert strong",
+      "targets": [
+        ["css=#ibanAlert strong", "css:finder"],
+        ["xpath=//div[@id='ibanAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "55430118-1c0a-464b-9ca3-319fae64b1cd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c31d393b-6d04-4448-992d-a174fa927462",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "11b53031-9b9d-477e-8506-efedccf8fa68",
+    "name": "Test_RimuoviSaldo 1.7.4 (Formato password errato) ",
+    "commands": [{
+      "id": "cf415b43-4add-40b3-84fe-6503c8b90c55",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a543d5f8-73c7-42b8-af85-478356f3e95e",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00447b52-2d42-481a-8eea-a285bbebbed2",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eae9f61-712d-45c6-aebd-14fcb0e9095e",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "90.99"
+    }, {
+      "id": "88a4e9fc-3e1f-4101-bc11-cf376cd135d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20ff3487-b2d1-4c62-adf0-d9ef5a3e7644",
+      "comment": "",
+      "command": "type",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "IT60B0542811101000000123456"
+    }, {
+      "id": "8acdd461-c075-4fa9-8744-5451cfd352e4",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e09ac63-738e-4152-8a6f-df1a11d4007d",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "account02"
+    }, {
+      "id": "280fdfaa-1f66-45aa-ad7c-bf9fcd2fc5f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87340613-08ad-4631-a18a-31d0876dc0fc",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "2e73a601-8c95-4eff-b3ab-8e7690704883",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=ibanAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "f7e84635-1762-4102-95f4-24a0dd93da08",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbc5eff-7d38-4457-acb3-58d1cc421f5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "19afbe75-e57b-4a59-a816-d0ac285c4c99",
+    "name": "Test_RimuoviSaldo 1.7.5 (Password non corrispondente, Form completo) ",
+    "commands": [{
+      "id": "c349dafb-8a88-4817-bddb-be10c14ed19b",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3646e07-1ba3-41d1-9d39-af7c2a3727af",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5299b0b3-def3-4104-abd0-5c31dbbfcfaf",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42938ed2-19f4-4a15-900f-7588c82ef7f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "90.99"
+    }, {
+      "id": "9706d505-96ca-4423-b0a2-b56790fa4abc",
+      "comment": "",
+      "command": "click",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c12d6d81-0117-4e1b-93e5-a855fef949da",
+      "comment": "",
+      "command": "type",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "IT60B0542811101000000123456"
+    }, {
+      "id": "da3c00c6-fa59-43b6-9c7f-59cc21f0891d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ff0a7b8-5913-4017-8b84-2908c75251ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account0"
+    }, {
+      "id": "08aca19c-6bb3-4fba-90b2-c73a886edb26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d42fc76-ca71-42f2-817a-66a0f0f7177e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=newPasswordNotEquals",
+      "targets": [
+        ["id=newPasswordNotEquals", "id"],
+        ["css=#newPasswordNotEquals", "css:finder"],
+        ["xpath=//div[@id='newPasswordNotEquals']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864fea34-a739-457e-b47c-7c2d7f336a35",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='newPasswordNotEquals']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Le password non combaciano')]", "xpath:innerText"]
+      ],
+      "value": "Le password non combaciano"
+    }, {
+      "id": "63bcb4e4-c309-4f54-9371-5d089239aa7f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "a118d05d-9164-4fad-8712-d67784c1e296",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=newPasswordNotEquals"
+    }]
+  }, {
+    "id": "062a6fb4-3913-4fb7-a705-c6f9034069d1",
+    "name": "Test_RimuoviSaldo 1.7.6 (Successful) ",
+    "commands": [{
+      "id": "33411d5a-0e48-44e7-85b0-4ad18db2091e",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3bfb4ea-c533-48dd-9e14-fe015862ff42",
+      "comment": "",
+      "command": "click",
+      "target": "id=5",
+      "targets": [
+        ["id=5", "id"],
+        ["css=#\\35", "css:finder"],
+        ["xpath=//li[@id='5']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Prelevare saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ba52ff-ec27-41ff-8a11-9513548943f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dd8ad7e-e6ca-4a57-8462-cec1e52336aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.row:nth-child(1) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "9.00"
+    }, {
+      "id": "4837316c-8245-42c7-bc5d-4e06b814532f",
+      "comment": "",
+      "command": "click",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "019af3cc-0ca6-4471-8b3b-3421709e3415",
+      "comment": "",
+      "command": "type",
+      "target": "name=iban",
+      "targets": [
+        ["name=iban", "name"],
+        ["css=.row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='iban']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "IT60B0542811101000000123456"
+    }, {
+      "id": "5ed7e3e2-fc05-49fd-9717-f642e1050ef9",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca091ce4-ee20-40e9-8123-a837d4dabc4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account01"
+    }, {
+      "id": "a4fbbbb1-e049-43c2-8946-524dd025a39a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='prelevaSaldoForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe974f0d-964d-4b62-bc1d-b4f958476e13",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=cashOut",
+      "targets": [
+        ["id=cashOut", "id"],
+        ["css=#cashOut", "css:finder"],
+        ["xpath=//div[@id='cashOut']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b60552d2-c5e2-42e4-8f95-bbdd4cf1f679",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='cashOut']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Prelievo effettuato con successo')]", "xpath:innerText"]
+      ],
+      "value": "Prelievo effettuato con successo"
+    }, {
+      "id": "1920c375-6966-4fc6-8c21-1226d917a99e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "1f89a678-5c78-4ac1-86a0-29b169b52622",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=cashOut"
+    }]
+  }],
+  "suites": [{
+    "id": "d5d37393-e864-4ca9-bd65-bdaeaf5c912c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

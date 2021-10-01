@@ -1,0 +1,882 @@
+{
+  "id": "a64059be-5af5-4dd4-a868-18d13eb3f9e5",
+  "version": "2.0",
+  "name": "Test_AggiungiAppuntoAlCatalogo",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "5bb70579-ff2d-4770-8c6a-e4f11620caac",
+    "name": "Test_AggiungiAppunto 2.1.1 (Formato titolo errato)",
+    "commands": [{
+      "id": "70dc9f9d-324d-4032-bf49-0311ec8c88cc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb163a3e-e5ba-46ae-a48b-f16bb3172dcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carica appunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d4fefc-4469-45f4-8666-4cd0cf36e530",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc5ca58a-9c0c-4fe3-9baf-9aa638ad7d4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Prog"
+    }, {
+      "id": "cffbdcb9-4080-4f58-abd1-176cd868d86d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn",
+      "targets": [
+        ["css=.text-center > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e378c616-0e43-49bf-9d31-aa1b822bb99b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=fileNotFound",
+      "targets": [
+        ["id=fileNotFound", "id"],
+        ["css=#fileNotFound", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7e238e6-9f83-44f2-a126-1574cb72b104",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Devi inserire caricare il file')]", "xpath:innerText"]
+      ],
+      "value": "Devi inserire caricare il file"
+    }, {
+      "id": "47895f9a-f31f-4ba0-b48c-0a96ab6e8460",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=titoloAlert",
+      "targets": [
+        ["id=titoloAlert", "id"],
+        ["css=#titoloAlert", "css:finder"],
+        ["xpath=//div[@id='titoloAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7ece5bd-4762-447b-9154-4ddc8d3c66e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#titoloAlert strong",
+      "targets": [
+        ["css=#titoloAlert strong", "css:finder"],
+        ["xpath=//div[@id='titoloAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "5f224c4e-ddfe-491a-9143-5cae6f0f1110",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=descrizioneAlert",
+      "targets": [
+        ["id=descrizioneAlert", "id"],
+        ["css=#descrizioneAlert", "css:finder"],
+        ["xpath=//div[@id='descrizioneAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d971d53f-95c1-4636-8e47-1070c76583e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#descrizioneAlert strong",
+      "targets": [
+        ["css=#descrizioneAlert strong", "css:finder"],
+        ["xpath=//div[@id='descrizioneAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "cc922f0a-e113-4250-8c46-3eedceae59fa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d133944-932e-4022-ab8e-f3fd105637da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#saldoAlert strong",
+      "targets": [
+        ["css=#saldoAlert strong", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "678452c0-6202-4281-b818-e7fb2ae62078",
+    "name": "Test_AggiungiAppunto 2.1.2 (Formato prezzo errato)",
+    "commands": [{
+      "id": "b475d173-63bf-4069-ac7b-83b75d03c80d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afa5951c-9d8b-4eaf-84bb-ecfde68324da",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carica appunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a44796-fab2-483f-abdc-5b5ad33e0554",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f9f32d7-67a9-4198-9cce-5ea51e3f43d4",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "de63ec7e-798c-4d7a-bd59-d29cef53d01a",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d9bbaee-cf60-40e9-acfb-21377d526923",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": "10,99"
+    }, {
+      "id": "d4aef6f9-40aa-45fb-b188-5ebfc3624b1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn",
+      "targets": [
+        ["css=.text-center > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8179b83d-d121-4be3-a3bb-b56483df177b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=fileNotFound",
+      "targets": [
+        ["id=fileNotFound", "id"],
+        ["css=#fileNotFound", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ada010d-096c-4f70-a8d2-5a031ddd4229",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Devi inserire caricare il file')]", "xpath:innerText"]
+      ],
+      "value": "Devi inserire caricare il file"
+    }, {
+      "id": "c4f949f0-dbf2-44eb-a943-9defe654702a",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=titoloAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "3c1af684-1de1-4a8c-a6aa-8c66e76e9ede",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=descrizioneAlert",
+      "targets": [
+        ["id=descrizioneAlert", "id"],
+        ["css=#descrizioneAlert", "css:finder"],
+        ["xpath=//div[@id='descrizioneAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76036727-9f16-4739-b8d6-ac1245f8871f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#descrizioneAlert strong",
+      "targets": [
+        ["css=#descrizioneAlert strong", "css:finder"],
+        ["xpath=//div[@id='descrizioneAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "ccd9d3a7-77d5-4dbf-abcc-f8b1fd64752e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=saldoAlert",
+      "targets": [
+        ["id=saldoAlert", "id"],
+        ["css=#saldoAlert", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "816f6354-90f5-4fcd-b46a-9c06340a00f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#saldoAlert strong",
+      "targets": [
+        ["css=#saldoAlert strong", "css:finder"],
+        ["xpath=//div[@id='saldoAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "245b6f3f-96c0-496f-a5fe-edf2da6a2620",
+    "name": "Test_AggiungiAppunto 2.1.3 (Formato descrizione errato)",
+    "commands": [{
+      "id": "77d2c968-3873-4001-9eb6-9fd402d9bf04",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "748db3c7-5dc2-4089-b07a-64d3b556ee96",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carica appunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0912f6a4-79dd-4b85-893f-1f1ba17c6ef4",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8f97be1-abf8-490e-98b3-01d2f4f0a98b",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "e29310f0-8b1c-48c5-8ca1-51cacf56cff1",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "752b2dea-3cf0-4e09-801e-8fd24d984836",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": "10.99"
+    }, {
+      "id": "bd95503f-2f87-4717-acee-2229821e4c8f",
+      "comment": "",
+      "command": "click",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e1a66d-086d-46b4-8498-59efb14bef18",
+      "comment": "",
+      "command": "type",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Prog"
+    }, {
+      "id": "2423f426-0a25-435a-ab71-2a12a5afa8f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn",
+      "targets": [
+        ["css=.text-center > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c55007-c1ab-45f4-9777-05bcd6e7616e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=fileNotFound",
+      "targets": [
+        ["id=fileNotFound", "id"],
+        ["css=#fileNotFound", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdd1e00d-5785-4cce-953d-a370d018a79f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='fileNotFound']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Devi inserire caricare il file')]", "xpath:innerText"]
+      ],
+      "value": "Devi inserire caricare il file"
+    }, {
+      "id": "10e200f2-547f-4d7f-b4aa-3033e404e3be",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=titoloAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "ef4d9e01-c3b4-43b3-9491-bb6f5b290409",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=descrizioneAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "8235a54c-56d2-4176-a43c-d5d064ee3e04",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#descrizioneAlert strong",
+      "targets": [
+        ["css=#descrizioneAlert strong", "css:finder"],
+        ["xpath=//div[@id='descrizioneAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "96e7fb22-3750-49d7-ac98-6d671c0268f4",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=saldoAlert",
+      "targets": [],
+      "value": "0"
+    }]
+  }, {
+    "id": "580fdccb-399f-4adc-9618-19a737759529",
+    "name": "Test_AggiungiAppunto 2.1.4 (Formato file errato, form completo)",
+    "commands": [{
+      "id": "912c37ea-6f01-468d-9f3a-b1285ea6164b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49d2a514-18fc-43f0-b7ef-4b249a7feee5",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carica appunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19a5b520-908a-4820-bad7-537fb10c9408",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea6af8c-0adc-485b-8edb-4c718f3c4b4c",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "a44713fb-f669-460c-a8f7-73b879a1ebd5",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "349622ed-aed7-4af6-bfef-d37fcc7e6135",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": "10.99"
+    }, {
+      "id": "db2c20f3-04e0-4fee-9c6f-175361ea0b41",
+      "comment": "",
+      "command": "click",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "302655ec-9a84-4ad2-96fb-a64158dbef4a",
+      "comment": "",
+      "command": "type",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "97dcaa1f-a71b-4a6f-9e4d-cf51e17d7a31",
+      "comment": "",
+      "command": "click",
+      "target": "id=fileappunto",
+      "targets": [
+        ["id=fileappunto", "id"],
+        ["css=#fileappunto", "css:finder"],
+        ["xpath=//button[@id='fileappunto']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sfoglia...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7675af6b-2e81-4524-a56c-b0bbda6d77d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=fileappuntoid",
+      "targets": [
+        ["id=fileappuntoid", "id"],
+        ["name=file", "name"],
+        ["css=#fileappuntoid", "css:finder"],
+        ["xpath=//input[@id='fileappuntoid']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\carmi\\OneDrive\\Desktop\\Nuovo documento di testo.txt"
+    }, {
+      "id": "565148c5-44c9-406b-be99-0ac2ee276dcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn",
+      "targets": [
+        ["css=.text-center > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b224d710-cbe3-40c4-8b49-0a777f400fdb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css:finder"],
+        ["xpath=//div[@id='error']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a66e50c-70eb-470d-b7d4-f193da555ded",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='error']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ops! Qualcosa è andato storto')]", "xpath:innerText"]
+      ],
+      "value": "Ops! Qualcosa è andato storto"
+    }, {
+      "id": "89bfbc62-200b-4017-9e5e-359355dc692a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "d99a844f-166f-4e33-a50c-b53e80889c9e",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=true"
+    }]
+  }, {
+    "id": "8aaaa2a6-969c-4f09-b655-b88c89735102",
+    "name": "Test_AggiungiAppunto 2.1.5 (Successful)",
+    "commands": [{
+      "id": "f572498a-3265-4a22-8b01-02c55becdb01",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63b339d8-df93-4395-87a6-ab54b008e14e",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//li[@id='3']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Carica appunto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c73f66-0a29-4912-9bf3-d058af292b6b",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cbd8897-d846-4c15-bfc4-5bbe1ac56cf8",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=.row:nth-child(6) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "78de2e5a-7018-4297-8fe4-97dc260ffa50",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c127b3-8a50-4873-babf-8bf84527c743",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=.row:nth-child(9) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[6]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": "10.99"
+    }, {
+      "id": "9dc07a29-0b4e-4066-b974-68116b4988a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e38cb254-95e4-4a7a-b1b9-122d96a4c34a",
+      "comment": "",
+      "command": "type",
+      "target": "name=descrizione",
+      "targets": [
+        ["name=descrizione", "name"],
+        ["css=.row:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//textarea[@name='descrizione']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[4]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Progettazione Algoritmi"
+    }, {
+      "id": "c45fa827-09c0-4131-b227-94113a045c30",
+      "comment": "",
+      "command": "click",
+      "target": "id=fileappunto",
+      "targets": [
+        ["id=fileappunto", "id"],
+        ["css=#fileappunto", "css:finder"],
+        ["xpath=//button[@id='fileappunto']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sfoglia...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3161bb00-b42f-4f87-a2e2-0061c965c03b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fileappuntoid",
+      "targets": [
+        ["id=fileappuntoid", "id"],
+        ["name=file", "name"],
+        ["css=#fileappuntoid", "css:finder"],
+        ["xpath=//input[@id='fileappuntoid']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\carmi\\OneDrive - Università di Salerno\\Università\\Progettazione Algoritmi\\PDF 1\\Esercizi Complessità PDF1.pdf"
+    }, {
+      "id": "8b22bb02-f636-4baf-b8f4-e886ae815848",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn",
+      "targets": [
+        ["css=.text-center > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='appuntoForm']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f46aeea9-18ec-4b9e-99d0-151a45889a57",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=uploadProduct",
+      "targets": [
+        ["id=uploadProduct", "id"],
+        ["css=#uploadProduct", "css:finder"],
+        ["xpath=//div[@id='uploadProduct']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c360866-7f80-4016-babe-2ce11b52d54c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='uploadProduct']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "Appunto caricato con successo. Un moderatore revisionerà l'appunto il prima possibile"
+    }, {
+      "id": "ecb9224d-58cc-4756-8d03-03a53eba7f06",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "6e03116c-5fd8-49f0-a230-4d519a9f6ecf",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=uploadProduct"
+    }]
+  }],
+  "suites": [{
+    "id": "ed42770b-ecab-4ef2-bb53-dc25032d997e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5bb70579-ff2d-4770-8c6a-e4f11620caac"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

@@ -1,0 +1,1053 @@
+{
+  "id": "447b2217-4f35-4a05-83c0-e3dd5e86bc2d",
+  "version": "2.0",
+  "name": "Test_ModificaEmail",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "958cbae0-7478-4868-b017-a59b857d704f",
+    "name": "Test_ModificaEmail 1.4.1 (Formato email attuale sbagliato)",
+    "commands": [{
+      "id": "8558e80b-3df9-40cf-8ca1-84648f01552d",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90cd9641-e229-4855-b0d2-8350623777fb",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b297bd-e7f3-432e-a138-4b736d7cc9f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "email@a"
+    }, {
+      "id": "d40ff45b-5aea-4b86-9026-9f303a1ef089",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3feabc2-b4f1-4da5-bab7-8470e5b77ff3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailCorrenteAlert",
+      "targets": [
+        ["id=emailCorrenteAlert", "id"],
+        ["css=#emailCorrenteAlert", "css:finder"],
+        ["xpath=//div[@id='emailCorrenteAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f0721d5-dd5f-46c0-83b5-d542a582e7ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#emailCorrenteAlert strong",
+      "targets": [
+        ["css=#emailCorrenteAlert strong", "css:finder"],
+        ["xpath=//div[@id='emailCorrenteAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Campo mancante/errato')]", "xpath:innerText"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "c51044dc-1fb5-4e2d-ae6f-32fe6de3d532",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nuovaEmailAlert",
+      "targets": [
+        ["id=nuovaEmailAlert", "id"],
+        ["css=#nuovaEmailAlert", "css:finder"],
+        ["xpath=//div[@id='nuovaEmailAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9df3c63d-29f6-4a39-8d2f-986f6288e7f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#nuovaEmailAlert strong",
+      "targets": [
+        ["css=#nuovaEmailAlert strong", "css:finder"],
+        ["xpath=//div[@id='nuovaEmailAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "1751409f-66bc-4329-bccb-4d142c4a4ade",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c65f7299-9806-4f06-b1f9-52b7c249cb72",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "7e6a5f80-99b5-4a50-98c3-8d0d411f5d9e",
+    "name": "Test_ModificaEmail 1.4.4 (Email non corrispondente) ",
+    "commands": [{
+      "id": "1e560d11-8769-4d88-ab8c-17863566f859",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ace8ae16-f48c-4195-9ed7-befdee9f5bab",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbad1b07-37ca-46be-bddf-25ad18608c06",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "carmineamendola92@hotmail.it"
+    }, {
+      "id": "35c72c29-1310-442f-a1e0-88b5d22bc770",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdfd3f80-698a-4201-bb44-d5ad410b9a40",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato2@email.it"
+    }, {
+      "id": "f1efea51-6c80-43da-8177-4f58fe3a866c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc4ba054-5559-4f46-b74b-2429c1719961",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account01"
+    }, {
+      "id": "b65d480a-07ed-477a-80d1-369ef8ed4ae0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c216af52-e95f-4a59-b883-cee8b909de15",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailNotEquals",
+      "targets": [
+        ["id=emailNotEquals", "id"],
+        ["css=#emailNotEquals", "css:finder"],
+        ["xpath=//div[@id='emailNotEquals']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b3d839-c249-49af-a23b-f1a5220b85cf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='emailNotEquals']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "L'email inserita non combacia con quella attuale"
+    }, {
+      "id": "27b9442d-c28b-4d65-b99e-e6d3a98a902c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "921e723f-c2bc-4fec-b55a-51daf1d8a251",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=emailNotEquals"
+    }, {
+      "id": "ef3c1a1c-a49a-44e8-aa25-31c8970803d7",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "616be434-f927-442b-9157-f47b6f3865f3",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nuovaEmailAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "093f5ea3-e362-4aa6-8a93-c6577fbe7054",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=passwordAlert",
+      "targets": [],
+      "value": "0"
+    }]
+  }, {
+    "id": "1ae8b774-3273-4039-81ef-5536545deb40",
+    "name": "Test_ModificaEmail 1.4.2 (Formato nuova email errato) ",
+    "commands": [{
+      "id": "8c70f339-3708-495f-9ab4-9380a30bdfe5",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4f4ff36-f883-46b9-9c08-bd3149913e09",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "972ee008-b8b3-4eb3-9901-b9ece9c7395a",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "485b94e0-a59a-4a57-b067-02e51366fd4d",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d4029f6-4fc4-47a0-a24b-ce4fc264e6b8",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "email@a"
+    }, {
+      "id": "49c4d0a5-4c86-4095-8fdf-52463b484805",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f301225-8e40-4532-a4b7-ce4769438426",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "bd5cb3c7-caef-4188-8aa1-2d7a076ad952",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=nuovaEmailAlert",
+      "targets": [
+        ["id=nuovaEmailAlert", "id"],
+        ["css=#nuovaEmailAlert", "css:finder"],
+        ["xpath=//div[@id='nuovaEmailAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c67356b-ce2b-49d4-b1ad-919f4d39aa22",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#nuovaEmailAlert strong",
+      "targets": [],
+      "value": "Campo mancante/errato"
+    }, {
+      "id": "df5677c8-3674-4d84-8091-bfa616e8e750",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "530363ae-3ea6-4971-bdec-dd36f096e423",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "f3b8ce77-e421-450a-b820-74fa66cdfa0f",
+    "name": "Test_ModificaEmail 1.4.6 (Nuova email già in uso)",
+    "commands": [{
+      "id": "95b653e0-adda-4db9-ba4e-f09d0b4e68b1",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4526c68d-f3ed-4a69-9f21-c894c0778aad",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "038ad8b8-cd87-4ce8-9731-850820a05b55",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "7e381940-f654-4bb2-9606-1d87f9df19b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbd8770b-c006-43d7-ae2f-517636e40f05",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "venditoreverificato@email.it"
+    }, {
+      "id": "ddeed5d2-802d-44b5-87b2-83083ddabe68",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd71b6a-3d45-4120-a18b-46012a75f397",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account01"
+    }, {
+      "id": "41f8d245-c346-445b-87b5-6bbfad7203b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82fa3dc-fa42-4cc3-8b60-c98f28bfbfb0",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "9cc4de5f-8602-4ff0-bf6d-c2afc47ed123",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nuovaEmailAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "fa6dbc72-fa9a-469f-82ff-3414e93b8aa5",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=passwordAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "8c1cecc7-a1e5-4906-b926-e712b1409d86",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=emailAlreadyExists",
+      "targets": [
+        ["id=emailAlreadyExists", "id"],
+        ["css=#emailAlreadyExists", "css:finder"],
+        ["xpath=//div[@id='emailAlreadyExists']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb90501a-0bba-4651-a270-d5e6e8623ab6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='emailAlreadyExists']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Indirizzo e-mail già associato ad un account')]", "xpath:innerText"]
+      ],
+      "value": "Indirizzo e-mail già associato ad un account"
+    }, {
+      "id": "83835250-e9cc-46c1-9d1c-a37675da5cf7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "4d2899fe-8bcb-47df-877a-2592ff01f1a2",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=emailAlreadyExists"
+    }]
+  }, {
+    "id": "9f814f0c-4797-4192-866f-c0456cf80ad0",
+    "name": "Test_ModificaEmail 1.4.3 (Formato password sbagliato)",
+    "commands": [{
+      "id": "ba9fd35d-d035-44cc-843c-b817a6638f40",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c502a87a-34f5-475a-b3bd-7f6e187027fb",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89347f04-c368-403d-92ef-52344b076fd6",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "939cb4c7-4390-4517-9ac2-405c86569a8e",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4468d96-7c74-419c-8198-9af2e57a1140",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato2@email.it"
+    }, {
+      "id": "0cd0d57e-a66b-4285-bca5-dde7b7c666b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e48e2f-ddd7-45d7-9a21-788fea2ff248",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "account01"
+    }, {
+      "id": "189c1600-64da-4c53-bb9f-d2f05c7c4bc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "460a4cc5-93d7-4404-b1ec-555a00138215",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "5ef0493e-4338-41df-9444-4c7123d01a8c",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nuovaEmailAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "56be045c-822c-4efd-b6c9-61cd2d6fc798",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordAlert",
+      "targets": [
+        ["id=passwordAlert", "id"],
+        ["css=#passwordAlert", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dd652c7-9d91-4656-bc8a-508d737c70f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#passwordAlert strong",
+      "targets": [
+        ["css=#passwordAlert strong", "css:finder"],
+        ["xpath=//div[@id='passwordAlert']/span/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span/strong", "xpath:position"]
+      ],
+      "value": "Campo mancante/errato"
+    }]
+  }, {
+    "id": "4c763577-b2f7-4007-ae7b-57eda4cb14e8",
+    "name": "Test_ModificaEmail 1.4.5 (Password senza riscontro)",
+    "commands": [{
+      "id": "d2e68f95-7e77-4238-855d-bb0e48cf6672",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d554f19d-0c81-499f-8922-f17e45fc29c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d25f4b91-ebd0-4066-bf2f-41837dfa6794",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "5acfa1bc-bb73-4aae-af8c-6b01e0421014",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83ce174c-cfe9-409a-b1a8-de47d9eb6ead",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato2@email.it"
+    }, {
+      "id": "7a2cd5ff-fbce-43a1-b32b-b13c801478de",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac496d51-ed99-46eb-9cb7-3a19c70a240b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account10"
+    }, {
+      "id": "ff920572-873e-40d4-99e5-97e33e0e2400",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f585efe3-9d22-4269-a296-cf97a4b55196",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "322609e5-4e8d-4d51-8fb5-f9b757352d65",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nuovaEmailAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "b0cf5c56-8599-45b7-acf6-999ea678d794",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=passwordAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "42e39181-c878-429c-97f7-2a83aa86d76f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=passwordNotEquals",
+      "targets": [
+        ["id=passwordNotEquals", "id"],
+        ["css=#passwordNotEquals", "css:finder"],
+        ["xpath=//div[@id='passwordNotEquals']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9dfe6e3-10d1-47a5-bb9a-c1bd9d1d18fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='passwordNotEquals']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'La password inserita non combacia con quella attuale')]", "xpath:innerText"]
+      ],
+      "value": "La password inserita non combacia con quella attuale"
+    }, {
+      "id": "4db7f3e4-b949-487a-8970-2af83093b55a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "16559665-bc0d-4aba-884c-b7e772f761be",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=passwordNotEquals"
+    }]
+  }, {
+    "id": "30dd71ff-8595-427c-b049-822dfa204326",
+    "name": "Test_ModificaEmail 1.4.7 (Successful)",
+    "commands": [{
+      "id": "bf9553e9-6812-4772-97d2-d14ea07aa759",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24431c15-0132-47bb-a333-685a095afbc7",
+      "comment": "",
+      "command": "click",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f47ab37-6f04-46c9-89a7-701830e091bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=emailAttuale",
+      "targets": [
+        ["name=emailAttuale", "name"],
+        ["css=.justify-content-xl-start > .float-left", "css:finder"],
+        ["xpath=//input[@name='emailAttuale']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato@email.it"
+    }, {
+      "id": "0abb3577-f017-4344-8a4b-3e4a992f37a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3970335-c961-41ef-8728-75779a14c393",
+      "comment": "",
+      "command": "type",
+      "target": "name=nuovaEmail",
+      "targets": [
+        ["name=nuovaEmail", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(2) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='nuovaEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "acquirenteverificato2@email.it"
+    }, {
+      "id": "ddea43e6-8d07-488d-a480-80a59e1ed903",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e49b4db-57f9-4163-96a3-4c83a6755a0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#modificaEmailForm > .row:nth-child(3) > .col > .float-left", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Account01"
+    }, {
+      "id": "da1d3983-fc1f-47f2-b630-ecdfae261390",
+      "comment": "",
+      "command": "click",
+      "target": "css=#modificaEmailForm .btn",
+      "targets": [
+        ["css=#modificaEmailForm .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='modificaEmailForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac429216-b1ac-4a8c-a29a-9715e18d22b8",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=emailCorrenteAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "5983ce99-bb3c-4598-81b1-6bfe91bc0916",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=nuovaEmailAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "22f228cd-368f-47f1-9925-a9783da74724",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=passwordAlert",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "1d349ac4-57b8-44b4-8e2a-d797b6d1fee3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=changeEmail",
+      "targets": [
+        ["id=changeEmail", "id"],
+        ["css=#changeEmail", "css:finder"],
+        ["xpath=//div[@id='changeEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be293bfb-c1dd-4d97-9e0a-eab5b846a785",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='changeEmail']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "L'email è stata modificata con successo"
+    }, {
+      "id": "251c3b64-b3d6-4f36-b184-74e61515338c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "2590bf5b-5a33-4b8f-bbe1-af00fd909b81",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=changeEmail"
+    }]
+  }],
+  "suites": [{
+    "id": "bb1e7042-fbc9-486d-b459-cf43e5463f2e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

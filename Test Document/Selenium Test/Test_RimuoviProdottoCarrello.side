@@ -1,0 +1,150 @@
+{
+  "id": "46d50742-b080-43a9-bca7-fa34a05abd6d",
+  "version": "2.0",
+  "name": "Test_RimuoviProdottoCarrello",
+  "url": "http://localhost/NoteMarket",
+  "tests": [{
+    "id": "63282757-776c-4bdc-850e-d2a67351e593",
+    "name": "Test_RimuoviProdottoCarrello 4.2.2 (Successful)",
+    "commands": [{
+      "id": "0cba1896-3cdb-4566-b7cd-f8979281cebd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40f96a9f-e096-4480-886d-fe1f6387ddea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='navcol-1']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c578f4e4-87ee-460d-b6c2-4fa68fa04a7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-remove",
+      "targets": [
+        ["css=.fa-remove", "css:finder"],
+        ["xpath=//i[@onclick=\"window.location='../catalogo/rimuovi-dal-carrello?id=2'\"]", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div/div[2]/div/div/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00fa4b08-4dc8-4bdd-8d30-147962e057a2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09b111a5-c300-4d19-b35a-bc57a2bd4dcd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Prodotto rimosso dal carrello')]", "xpath:innerText"]
+      ],
+      "value": "Prodotto rimosso dal carrello"
+    }, {
+      "id": "6b1a2360-4086-4bc0-8839-2b3f58ddd1a7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "72a1ff55-6bab-4a07-905e-d1a7de123aee",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/catalogo/appunti.jsp?confirm=removeToCart"
+    }]
+  }, {
+    "id": "3c377931-a90b-4782-8650-bf71cad4d5c8",
+    "name": "Test_RimuoviProdottoCarrello 4.2.1 (Carrello vuoto)",
+    "commands": [{
+      "id": "96d36169-bcd3-4414-b1a8-fcb2ee624e36",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba94f4a9-02a7-4e62-b6fd-58fb62d57634",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-light",
+      "targets": [
+        ["css=.btn-light", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='navcol-1']/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carrello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8979f480-102b-414f-a728-2212a6f41458",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='submit']/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ACQUISTA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29f96952-9b04-4fef-a0ce-53d1190bb0e9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [
+        ["id=alert", "id"],
+        ["css=#alert", "css:finder"],
+        ["xpath=//div[@id='alert']", "xpath:attributes"],
+        ["xpath=//div[@id='headingForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60a21313-6fb6-410d-b54f-6c0b106acc21",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='alert']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Non ci sono prodotti nel carrello')]", "xpath:innerText"]
+      ],
+      "value": "Non ci sono prodotti nel carrello"
+    }]
+  }],
+  "suites": [{
+    "id": "6057bfa6-12ee-4434-a31f-9143c5f8a486",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["63282757-776c-4bdc-850e-d2a67351e593"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/NoteMarket"],
+  "plugins": []
+}

@@ -1,0 +1,155 @@
+{
+  "id": "99511d76-5916-4d46-9a02-73546dccab1f",
+  "version": "2.0",
+  "name": "Test_RimuoviImmagineDelProfilo",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "9a788480-4bf7-45cb-a5e3-0ed00fde9cac",
+    "name": "Test_RimuoviImmagine 1.9.2 (Successful)",
+    "commands": [{
+      "id": "baa07f13-0606-4358-8541-8b8d8d914a76",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "175392ec-79e3-41ce-abc1-90da283f3d7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//li[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Foto Profilo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8d0348a-57ce-43bd-bd18-acb5f4f32716",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rimuoviImmagineForm .btn",
+      "targets": [
+        ["css=#rimuoviImmagineForm .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='rimuoviImmagineForm']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rimuovi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c5940a5-7157-41da-8e7c-5e490bd01e04",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=removeImage",
+      "targets": [
+        ["id=removeImage", "id"],
+        ["css=#removeImage", "css:finder"],
+        ["xpath=//div[@id='removeImage']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18ad46a7-d796-4a98-813d-af9bf828d986",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='removeImage']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Immagine di profilo rimossa con successo')]", "xpath:innerText"]
+      ],
+      "value": "Immagine di profilo rimossa con successo"
+    }, {
+      "id": "ffb635eb-e752-4ddc-9863-54675d9fe911",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "9a3d5768-59fa-4c48-819c-cc46655bcc90",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=removeImage"
+    }]
+  }, {
+    "id": "ca1153eb-e2e5-4554-9d36-b27b7d838ccf",
+    "name": "Test_RimuoviImmagine 1.9.1 (Immagine non presente)",
+    "commands": [{
+      "id": "3313307f-f0f6-49e8-95ef-50308566b644",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2940e7a-499e-4caa-a99a-bcdaf08dd401",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//li[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Foto Profilo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4bbc38e-66ac-4494-bbc1-7745deb651e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rimuoviImmagineForm .btn",
+      "targets": [
+        ["css=#rimuoviImmagineForm .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='rimuoviImmagineForm']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rimuovi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41a8adf-9805-4532-b477-3ac0537215bc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=imgNotFound",
+      "targets": [
+        ["id=imgNotFound", "id"],
+        ["css=#imgNotFound", "css:finder"],
+        ["xpath=//div[@id='imgNotFound']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69136274-4d91-48f9-946b-154a8a31bc6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='imgNotFound']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Non hai nessuna immagine caricata')]", "xpath:innerText"]
+      ],
+      "value": "Non hai nessuna immagine caricata"
+    }]
+  }],
+  "suites": [{
+    "id": "128d4528-1ccf-4534-83ec-25aaa2618546",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9a788480-4bf7-45cb-a5e3-0ed00fde9cac"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

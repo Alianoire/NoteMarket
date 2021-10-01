@@ -1,0 +1,300 @@
+{
+  "id": "dd119fab-a79e-4e24-b3be-94a55ec1ef0d",
+  "version": "2.0",
+  "name": "Test_CaricaImmagineDelProfilo",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "4d66c27b-9a7a-4e30-918b-1d2c970924e8",
+    "name": "Test_CaricaImmagine 1.8.2 (Grandezza immagine superiore) ",
+    "commands": [{
+      "id": "14a84f6e-6b70-46c8-9dda-f23191be9f4c",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8684880f-8279-4890-ad9f-a6a2d0c367fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//li[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Foto Profilo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65d06881-2d6f-405b-8583-7c3c3829a06d",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgProfilo",
+      "targets": [
+        ["id=imgProfilo", "id"],
+        ["css=#imgProfilo", "css:finder"],
+        ["xpath=//button[@id='imgProfilo']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sfoglia...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadd6821-5d26-4147-9f63-3ce14b837d9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fileid",
+      "targets": [
+        ["id=fileid", "id"],
+        ["name=imgProfilo", "name"],
+        ["css=#fileid", "css:finder"],
+        ["xpath=//input[@id='fileid']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\carmi\\OneDrive\\Desktop\\unnamed.jpg"
+    }, {
+      "id": "f74c4130-d8cc-4e2f-ab2f-01459394fb35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Carica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da78d84-a612-4d07-a552-db23670aa732",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=sizeImg",
+      "targets": [
+        ["id=sizeImg", "id"],
+        ["css=#sizeImg", "css:finder"],
+        ["xpath=//div[@id='sizeImg']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52a7879e-f84d-4a40-94dd-e090b093c210",
+      "comment": "",
+      "command": "click",
+      "target": "id=sizeImg",
+      "targets": [
+        ["id=sizeImg", "id"],
+        ["css=#sizeImg", "css:finder"],
+        ["xpath=//div[@id='sizeImg']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f5df5f-10a3-40ae-bb0c-7d5d73caa7c1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sizeImg']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Dimensioni immagini non consentite. Devi caricare immagini 300x300')]", "xpath:innerText"]
+      ],
+      "value": "Dimensioni immagini non consentite. Devi caricare immagini 300x300"
+    }, {
+      "id": "1d78724e-b268-49cc-a65d-e835c78ca30f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "a142de8b-395d-4772-9540-4951e333f723",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?error=sizeImg"
+    }]
+  }, {
+    "id": "1ac62d57-629a-4d7a-bbd3-e2a0c36b06f9",
+    "name": "Test_CaricaImmagine 1.8.1 (Immagine non selezionata) ",
+    "commands": [{
+      "id": "27c54b2a-f265-429c-a33b-3d626338647a",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b29f5e9-692c-493c-bca3-e53ee753bb8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//li[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Foto Profilo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "652d81c5-aec8-466b-a1b6-973b611ad5e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Carica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e7c1215-c9da-437f-932e-b2ae614279d4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=imgNotFound",
+      "targets": [
+        ["id=imgNotFound", "id"],
+        ["css=#imgNotFound", "css:finder"],
+        ["xpath=//div[@id='imgNotFound']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8066d5c3-b24a-46e9-bff6-7c943bc807ae",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='imgNotFound']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Devi inserire prima una immagine')]", "xpath:innerText"]
+      ],
+      "value": "Devi inserire prima una immagine"
+    }]
+  }, {
+    "id": "6dc501cf-77bd-4af1-aaaa-15c477062052",
+    "name": "Test_CaricaImmagine 1.8.3 (Successful)",
+    "commands": [{
+      "id": "2b63dc3e-75af-4eac-8bbd-8cc7970e5dac",
+      "comment": "",
+      "command": "open",
+      "target": "/NoteMarket/home/pagina-personale",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cffcc62-376c-440f-8ed9-5f372226441b",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//li[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Foto Profilo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23115dc1-21d4-44e7-ad39-516ab5324e6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgProfilo",
+      "targets": [
+        ["id=imgProfilo", "id"],
+        ["css=#imgProfilo", "css:finder"],
+        ["xpath=//button[@id='imgProfilo']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sfoglia...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94fa7b0-2672-4e9a-a24d-8201a3c70ecd",
+      "comment": "",
+      "command": "type",
+      "target": "id=fileid",
+      "targets": [
+        ["id=fileid", "id"],
+        ["name=imgProfilo", "name"],
+        ["css=#fileid", "css:finder"],
+        ["xpath=//input[@id='fileid']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\carmi\\OneDrive\\Desktop\\Peter-Hadrovic-300x300px.png"
+    }, {
+      "id": "a28e875e-aa35-440b-845d-ca09e7046960",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='caricaImmagineForm']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Carica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb3784b0-22ed-45f5-b0b5-a969295dbc2d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=uploadImage",
+      "targets": [
+        ["id=uploadImage", "id"],
+        ["css=#uploadImage", "css:finder"],
+        ["xpath=//div[@id='uploadImage']", "xpath:attributes"],
+        ["xpath=//div[@id='alertAppend']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04f3a32e-b4c9-46ff-86fc-1538884838c6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(2) > strong",
+      "targets": [
+        ["css=.text-center:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='uploadImage']/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Immagine di profilo caricata con successo')]", "xpath:innerText"]
+      ],
+      "value": "Immagine di profilo caricata con successo"
+    }, {
+      "id": "75b966e9-0fd4-4a17-bc32-c37e2cc5d8ae",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "0fa01550-6623-424b-bcb1-cc6117c8ed6b",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "http://localhost/NoteMarket/home/pagina-personale?confirm=uploadImage"
+    }]
+  }],
+  "suites": [{
+    "id": "24a7d566-0087-429b-a6ce-29275aa50435",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4d66c27b-9a7a-4e30-918b-1d2c970924e8"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
