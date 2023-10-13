@@ -1,4 +1,4 @@
 # NoteMarket
-Progetto di Ingegneria del Software 2020/2021 - Università degli Studi di Salerno
+Software Engineering Project 2020/2021 - University of Salerno
 
-Il sito offre un servizio di vendita e acquisto di materiale didattico universitario, nello specifico appunti e videolezioni. Il vasto catalogo dispone di materiale didattico reperibile in qualsiasi momento ad un prezzo accessibile, senza spreco di carta. L’utente può scegliere di creare un account differente a seconda delle esigenze: crea un account Acquirente se è intenzionato ad acquistare, crea un account Venditore se vuole caricare appunti destinati alla vendita.
+The site offers a service for selling and buying university teaching materials, specifically notes and video lectures. The extensive catalog has teaching materials available at any time at an affordable price, without wasting paper. Users can choose to create a different account depending on their needs: create a Buyer account if they intend to buy, create a Seller account if they want to upload notes intended for sale.
